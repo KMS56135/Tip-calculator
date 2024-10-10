@@ -611,6 +611,12 @@ label {
   background-color: rgb(159 232 223 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 920px) {
+  .btn {
+    min-width: 115px;
+  }
+}
+
 .btn--custom {
   height: 48px;
   min-width: 48%;
@@ -646,6 +652,12 @@ label {
   border-color: hsl(172 67% 45% / var(--tw-border-opacity));
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 920px) {
+  .btn--custom {
+    min-width: 115px;
+  }
 }
 
 .absolute {
@@ -702,6 +714,10 @@ label {
 
 .min-h-\[100vh\] {
   min-height: 100vh;
+}
+
+.w-\[146px\] {
+  width: 146px;
 }
 
 .w-full {
@@ -910,6 +926,10 @@ label {
     display: flex;
   }
 
+  .desktop\:min-w-\[115px\] {
+    min-width: 115px;
+  }
+
   .desktop\:gap-x-\[48px\] {
     -moz-column-gap: 48px;
          column-gap: 48px;
@@ -923,20 +943,12 @@ label {
     padding: 40px;
   }
 
-  .desktop\:pl-\[48px\] {
-    padding-left: 48px;
-  }
-
-  .desktop\:pb-\[\] {
-    padding-bottom: ;
-  }
-
-  .desktop\:pb-\[80px\] {
-    padding-bottom: 80px;
-  }
-
   .desktop\:pb-\[87px\] {
     padding-bottom: 87px;
+  }
+
+  .desktop\:pl-\[48px\] {
+    padding-left: 48px;
   }
 
   .desktop\:text-\[48px\] {

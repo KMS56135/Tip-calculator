@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Space Mono", "monospace";
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  label {
+    display: block;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply min-w-[48%] h-[48px] bg-very-dark-cyan text-white rounded-[5px] text-center hover:bg-[#26c2ae] transition ease-in-out delay-100 hover:text-very-dark-cyan active:bg-[#9fe8df];
+  }
+
+  .btn--custom {
+    @apply min-w-[48%] text-center rounded-[5px]
+    h-[48px] text-very-dark-cyan bg-very-light-grayish-cyan border-white
+  placeholder:text-gark-grayish-cyan focus:outline-none focus:border-2 focus:border-strong-cyan transition ease-in-out delay-100;
+  }
+
+  .btn--active {
+    @apply bg-[#26c2ae] 
+  }
+}
